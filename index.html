@@ -67,6 +67,7 @@
       font-weight: 700;
       font-size: 15px;
     }
+
     /* ---- HERO ---- */
     .hero {
       padding: 80px 0 64px;
@@ -126,6 +127,102 @@
       margin-bottom: 40px;
     }
 
+    /* ---- PROBLEM ---- */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 640px) {
+      .problem-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .problem-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+    .problem-card--before {
+      border-left: 4px solid var(--error);
+    }
+    .problem-card--after {
+      border-left: 4px solid var(--success);
+    }
+    .problem-card h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .problem-card h3.text-error { color: var(--error); }
+    .problem-card h3.text-success { color: var(--success); }
+    .problem-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--text-secondary);
+    }
+    .problem-item .icon-x { color: var(--error); font-size: 14px; flex-shrink: 0; margin-top: 2px; }
+    .problem-item .icon-check { color: var(--success); font-size: 14px; flex-shrink: 0; margin-top: 2px; }
+    .problem-stat {
+      margin-top: 16px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .problem-stat--error { background: rgba(199, 80, 80, 0.07); }
+    .problem-stat--success { background: rgba(107, 158, 120, 0.07); }
+    .problem-stat .number {
+      font-size: 24px;
+      font-weight: 700;
+      display: block;
+    }
+    .problem-stat .number.text-error { color: var(--error); }
+    .problem-stat .number.text-success { color: var(--success); }
+    .problem-stat .desc {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* ---- SIGNAL EXAMPLE ---- */
+    .signal-card {
+      max-width: 520px;
+      margin: 0 auto;
+      background: var(--primary);
+      color: #FFF6EF;
+      border-radius: 16px;
+      padding: 28px 32px;
+    }
+    .signal-card .signal-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .signal-card .signal-text {
+      font-size: 15px;
+      line-height: 1.7;
+      font-style: italic;
+    }
+    .signal-card .signal-time {
+      font-size: 11px;
+      opacity: 0.4;
+      margin-top: 16px;
+    }
+    .signal-caption {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
     /* ---- HOW IT WORKS ---- */
     .steps {
       display: grid;
@@ -158,6 +255,40 @@
       .steps { grid-template-columns: repeat(3, 1fr); }
     }
 
+    /* ---- PLATFORMS ---- */
+    .platforms-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media (min-width: 640px) {
+      .platforms-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    .platform-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .platform-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .platform-card p {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .platforms-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .platforms-note span { color: var(--accent); font-weight: 600; }
+
     /* ---- PRIVACY ---- */
     .privacy-list {
       list-style: none;
@@ -181,6 +312,22 @@
       border-radius: 50%;
       background: var(--accent);
       opacity: 0.6;
+    }
+
+    /* ---- QUOTE ---- */
+    .quote-section { text-align: center; }
+    .quote-text {
+      font-size: clamp(18px, 3.5vw, 24px);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: 600px;
+      margin: 0 auto 16px;
+      color: var(--primary);
+    }
+    .quote-attr {
+      font-size: 13px;
+      color: var(--text-secondary);
     }
 
     /* ---- WAITLIST ---- */
@@ -272,8 +419,69 @@
     <div class="container">
       <img src="logo.png" alt="How's Your Day" class="hero-logo">
       <h1>The one thing you need to know<br>about your child's <span class="accent">school day</span></h1>
-      <p>How's Your Day links quietly to your children's school platforms&mdash;PowerSchool, Seesaw, and Google Classroom. Each day it looks for new grades, comments, and notices. At the hour you choose, it gives you a single, brief signal about what matters most. There is no scrolling. There is no need to sign in. Only what really matters, and nothing more.</p>
+      <p>How's Your Day connects quietly to your children's school platforms. Each day, at the time you choose, it gives you a single, brief signal about what matters most. No scrolling. No sign-ins. Just clarity.</p>
       <a href="#waitlist" class="cta-btn">Join the Waitlist</a>
+    </div>
+  </section>
+
+  <!-- The Problem -->
+  <section>
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">Parents are drowning in school platform noise</h2>
+      <div class="problem-grid">
+        <div class="problem-card problem-card--before">
+          <h3 class="text-error">Every evening without How's Your Day</h3>
+          <div class="problem-item">
+            <span class="icon-x">&#10005;</span>
+            <span>Open PowerSchool &mdash; scroll through grades for each child, hunt for new comments</span>
+          </div>
+          <div class="problem-item">
+            <span class="icon-x">&#10005;</span>
+            <span>Open Google Classroom &mdash; check 6+ courses for new assignments</span>
+          </div>
+          <div class="problem-item">
+            <span class="icon-x">&#10005;</span>
+            <span>Open Seesaw &mdash; look for activities and teacher posts you may have missed</span>
+          </div>
+          <div class="problem-item">
+            <span class="icon-x">&#10005;</span>
+            <span>Scroll 50+ messages in WhatsApp parent groups for anything important</span>
+          </div>
+          <div class="problem-item">
+            <span class="icon-x">&#10005;</span>
+            <span>Try to piece it together. Miss things anyway.</span>
+          </div>
+          <div class="problem-stat problem-stat--error">
+            <span class="number text-error">15&ndash;30 min</span>
+            <span class="desc">Every. Single. Evening.</span>
+          </div>
+        </div>
+        <div class="problem-card problem-card--after">
+          <h3 class="text-success">With How's Your Day</h3>
+          <div class="signal-card" style="margin-bottom: 16px;">
+            <div class="signal-label">Today's Signal</div>
+            <div class="signal-text">Anay has a math test tomorrow covering exponential equations. Mr. Vento gave a review worksheet in class today. Make sure he's finished the practice problems tonight.</div>
+            <div class="signal-time">Today at 4:00 PM</div>
+          </div>
+          <div class="problem-item">
+            <span class="icon-check">&#10003;</span>
+            <span>Names the child, teacher, and subject</span>
+          </div>
+          <div class="problem-item">
+            <span class="icon-check">&#10003;</span>
+            <span>Tells you the specific action to take</span>
+          </div>
+          <div class="problem-item">
+            <span class="icon-check">&#10003;</span>
+            <span>Delivered at the time you choose</span>
+          </div>
+          <div class="problem-stat problem-stat--success">
+            <span class="number text-success">15 seconds</span>
+            <span class="desc">Read. Know. Done.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -281,7 +489,7 @@
   <section>
     <div class="container">
       <div class="section-label">How It Works</div>
-      <h2 class="section-title">Three steps to clarity</h2>
+      <h2 class="section-title">Three steps. Then relax.</h2>
       <div class="steps">
         <div class="step">
           <div class="step-number">01</div>
@@ -302,17 +510,52 @@
     </div>
   </section>
 
+  <!-- Platforms -->
+  <section>
+    <div class="container">
+      <div class="section-label">Integrations</div>
+      <h2 class="section-title">We read the platforms you already use</h2>
+      <div class="platforms-grid">
+        <div class="platform-card">
+          <h4>PowerSchool</h4>
+          <p>Grades, attendance, report cards, teacher comments</p>
+        </div>
+        <div class="platform-card">
+          <h4>Google Classroom</h4>
+          <p>Assignments, due dates, announcements, coursework</p>
+        </div>
+        <div class="platform-card">
+          <h4>Seesaw</h4>
+          <p>Class activities, student work, teacher posts</p>
+        </div>
+        <div class="platform-card">
+          <h4>WhatsApp</h4>
+          <p>Parent group messages about events, trips, notices</p>
+        </div>
+      </div>
+      <p class="platforms-note"><span>Coming soon:</span> ClassDojo, Remind, Canvas, Schoology</p>
+    </div>
+  </section>
+
   <!-- Privacy -->
   <section>
     <div class="container">
       <div class="section-label">Privacy</div>
-      <h2 class="section-title">Your child's data is safe</h2>
+      <h2 class="section-title">Privacy is not a feature. It's the foundation.</h2>
       <ul class="privacy-list">
         <li>School credentials are encrypted on your device before they ever leave your phone.</li>
         <li>Your data is isolated &mdash; only you can access it, enforced at the database level.</li>
-        <li>We never share, sell, or train on your family's information.</li>
+        <li>We never share, sell, or use your family's information for AI training.</li>
         <li>Raw school data is processed and discarded. Only the daily signal is stored.</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-section">
+    <div class="container">
+      <p class="quote-text">&ldquo;I showed it to 9 different parents and they all asked when it would go live on the App Store.&rdquo;</p>
+      <p class="quote-attr">&mdash; Aarohi Sen, Founder</p>
     </div>
   </section>
 
