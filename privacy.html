@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — How's Your Day</title>
+  <meta name="description" content="How's Your Day privacy policy. Learn how we protect your family's data.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #4A3F55;
+      --accent: #C4A882;
+      --bg: #FFF6EF;
+      --text: #4A3F55;
+      --text-secondary: #8A7F94;
+      --border: #E8DDD4;
+      --card-bg: #FFFFFF;
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .nav-brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+    .nav-brand span {
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .content {
+      padding: 60px 0 80px;
+    }
+
+    h1 {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-brand">
+        <img src="logo.png" alt="How's Your Day logo">
+        <span>How's Your Day</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="container">
+
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: February 19, 2026</p>
+
+      <p>How's Your Day ("we," "our," or "the app") is operated by It&uacute;y FZ-LLC. We built this app for parents who want a simple, clear view of their child's school day. This privacy policy explains what data we collect, how we use it, and how we protect it.</p>
+
+      <div class="highlight-box">
+        <p><strong>The short version:</strong> Your school credentials are encrypted on your device before they leave your phone. We process school data to generate your daily signal, then immediately discard the raw data. We never sell, share, or use your family's data for advertising or AI model training.</p>
+      </div>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>Account Information</h3>
+      <p>When you create an account, we collect your email address, name, and a password. This is used for authentication and to deliver your daily signal.</p>
+
+      <h3>School Platform Credentials</h3>
+      <p>To connect your children's school platforms (PowerSchool, Google Classroom, WhatsApp), you provide login credentials or authorize access via OAuth. <strong>All credentials are encrypted on your device using client-side encryption before they are transmitted or stored.</strong> We never have access to your plaintext passwords.</p>
+
+      <h3>Google Classroom Data</h3>
+      <p>When you connect Google Classroom, we access the following data through Google's API using OAuth 2.0 authorization:</p>
+      <ul>
+        <li>Course names and teacher information</li>
+        <li>Announcements and due dates</li>
+        <li>Coursework and student submissions (read-only)</li>
+        <li>Class rosters (to identify your child's classes)</li>
+      </ul>
+
+      <h3>School Platform Data</h3>
+      <p>From connected platforms, we temporarily access data such as grades, teacher comments, attendance, assignments, announcements, and parent group messages. This data is processed to generate your daily signal and is <strong>not permanently stored</strong>.</p>
+
+      <h3>Preferences</h3>
+      <p>We store your children's names, preferred signal delivery time, timezone, and notification preferences (email, push, WhatsApp).</p>
+
+      <h3>Waitlist</h3>
+      <p>If you join our waitlist, we collect your email address solely to notify you when the app launches.</p>
+
+      <h2>2. How We Use Your Data</h2>
+
+      <p>We use your data for one purpose: <strong>to generate and deliver your daily signal.</strong> Specifically:</p>
+      <ul>
+        <li><strong>Credential retrieval:</strong> Your encrypted credentials are decrypted server-side to authenticate with school platforms and retrieve current data.</li>
+        <li><strong>Data processing:</strong> School data is analyzed by our AI pipeline to identify the single most important piece of information for your day &mdash; an upcoming test, a teacher comment, a deadline, or a school notice.</li>
+        <li><strong>Signal generation:</strong> We use Anthropic's Claude AI to synthesize a 2&ndash;3 sentence signal from the processed data. Only the final signal text is stored.</li>
+        <li><strong>Delivery:</strong> Your signal is delivered via the method you choose &mdash; in-app, email, or WhatsApp.</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p><strong>Process and discard:</strong> Raw school data (grades, comments, announcements, messages) is processed in memory and immediately discarded after your signal is generated. We do not retain, index, or archive the underlying school data.</p>
+      </div>
+
+      <h2>3. Google API Services &mdash; Limited Use Disclosure</h2>
+
+      <p>How's Your Day's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+      <p>Specifically:</p>
+      <ul>
+        <li>We only use Google Classroom data to provide the core functionality of the app &mdash; generating your daily signal.</li>
+        <li>We do not use Google Classroom data for advertising, marketing, or profiling.</li>
+        <li>We do not sell Google Classroom data to third parties.</li>
+        <li>We do not use Google Classroom data for AI/ML model training beyond generating your individual signal.</li>
+        <li>We do not allow humans to read your Google Classroom data unless you provide affirmative consent, it is necessary for security purposes, or it is required by law.</li>
+      </ul>
+
+      <h2>4. Data Storage and Security</h2>
+
+      <ul>
+        <li><strong>Client-side encryption:</strong> School credentials are encrypted on your device using a cryptographic key before transmission. The server never receives plaintext credentials.</li>
+        <li><strong>Database isolation:</strong> Row-Level Security (RLS) is enforced at the database level, ensuring each user can only access their own data. This is not application-level logic &mdash; it is enforced by the database engine itself.</li>
+        <li><strong>Infrastructure:</strong> Our backend runs on Supabase (PostgreSQL) with encrypted connections. Our AI pipeline runs on Railway with isolated container execution.</li>
+        <li><strong>Signal storage:</strong> Only the final signal text (2&ndash;3 sentences) and its metadata (date, type, child name) are stored. Raw school data is never persisted.</li>
+      </ul>
+
+      <h2>5. Third-Party Services</h2>
+
+      <p>We use the following third-party services to operate the app:</p>
+      <ul>
+        <li><strong>Supabase</strong> (database, authentication, storage) &mdash; hosted in the United States</li>
+        <li><strong>Anthropic Claude AI</strong> (signal generation) &mdash; school data is sent to Claude's API for processing. Anthropic does not use API inputs for model training per their <a href="https://www.anthropic.com/policies/privacy" target="_blank" rel="noopener">privacy policy</a>.</li>
+        <li><strong>Resend</strong> (email delivery) &mdash; receives only the signal text and your email address</li>
+        <li><strong>Twilio</strong> (WhatsApp delivery) &mdash; receives only the signal text and your phone number, if WhatsApp delivery is enabled</li>
+        <li><strong>Vercel</strong> (web app hosting)</li>
+        <li><strong>Railway</strong> (AI pipeline hosting)</li>
+      </ul>
+
+      <p>We do not share your data with any other third parties. None of these services receive your school credentials or raw school data &mdash; only the minimum data required for their specific function.</p>
+
+      <h2>6. Children's Privacy</h2>
+
+      <p>How's Your Day is a tool for parents. We do not collect data directly from children, and children do not create accounts or interact with the app. The school data we process belongs to the parent's connected accounts and is used solely to generate signals for the parent.</p>
+
+      <p>We are committed to complying with applicable children's privacy laws, including COPPA (Children's Online Privacy Protection Act) and FERPA (Family Educational Rights and Privacy Act). If you believe we have inadvertently collected personal information from a child, please contact us immediately.</p>
+
+      <h2>7. Data Retention</h2>
+
+      <ul>
+        <li><strong>Account data:</strong> Retained while your account is active. Deleted upon account deletion.</li>
+        <li><strong>Encrypted credentials:</strong> Retained while the platform connection is active. Deleted when you disconnect a platform or delete your account.</li>
+        <li><strong>Daily signals:</strong> Retained as part of your signal history. Deleted upon account deletion.</li>
+        <li><strong>Raw school data:</strong> Not retained. Processed in memory and discarded immediately after signal generation.</li>
+        <li><strong>Pipeline logs:</strong> Operational logs (status, errors) are retained for up to 90 days for debugging purposes. They do not contain school data content.</li>
+      </ul>
+
+      <h2>8. Your Rights</h2>
+
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> your personal data by viewing your profile, preferences, and signal history in the app.</li>
+        <li><strong>Delete</strong> your account and all associated data at any time.</li>
+        <li><strong>Disconnect</strong> any school platform, which removes the stored encrypted credentials.</li>
+        <li><strong>Revoke</strong> Google Classroom access at any time through your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions</a>.</li>
+        <li><strong>Export</strong> your signal history upon request.</li>
+      </ul>
+
+      <h2>9. Changes to This Policy</h2>
+
+      <p>We may update this privacy policy from time to time. If we make material changes, we will notify you via email or an in-app notice. The "Last updated" date at the top of this page reflects the most recent revision.</p>
+
+      <h2>10. Contact</h2>
+
+      <p>If you have questions about this privacy policy or how we handle your data, please contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> privacy@howsyourday.app</li>
+        <li><strong>Entity:</strong> It&uacute;y FZ-LLC, UAE</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright 2026 How's Your Day. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
