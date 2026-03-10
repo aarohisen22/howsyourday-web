@@ -49,6 +49,10 @@
     nav {
       padding: 20px 0;
       border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 100;
     }
     nav .container {
       display: flex;
@@ -105,7 +109,7 @@
       margin: 0 auto 40px;
       line-height: 1.7;
     }
-    .hero .cta-btn {
+    .cta-btn {
       font-family: 'Lora', Georgia, serif;
       font-size: 15px;
       font-weight: 700;
@@ -119,7 +123,7 @@
       display: inline-block;
       transition: opacity 0.2s;
     }
-    .hero .cta-btn:hover { opacity: 0.85; }
+    .cta-btn:hover { opacity: 0.85; }
 
     /* ---- SECTIONS ---- */
     section { padding: 64px 0; }
@@ -378,9 +382,9 @@
         <img src="logo.png" alt="How's Your Day logo">
         <span>How's Your Day</span>
       </a>
-      <div style="display: flex; gap: 1.5rem; align-items: center;">
-        <a href="/privacy" class="nav-link" style="font-size: 0.95rem;">Privacy Policy</a>
-        <a href="https://app.howsyourday.app" class="nav-link">Open Web App &rarr;</a>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <a href="/privacy" class="nav-link">Privacy</a>
+        <a href="https://app.howsyourday.app" class="nav-link">Web App &rarr;</a>
       </div>
     </div>
   </nav>
@@ -389,7 +393,7 @@
   <section class="hero">
     <div class="container">
       <img src="logo.png" alt="How's Your Day" class="hero-logo">
-      <h1>The one thing you need to know<br>about your child's <span class="accent">school day</span></h1>
+      <h1>The one thing you need to know about your child's <span class="accent">school day</span></h1>
       <p>How's Your Day connects quietly to your children's school platforms. Each day, at the time you choose, it gives you a single, brief signal about what matters most. No scrolling. No sign-ins. Just clarity.</p>
       <a href="https://app.howsyourday.app" class="cta-btn">Open Web App</a>
     </div>
@@ -461,7 +465,7 @@
         <div class="step">
           <div class="step-number">01</div>
           <h3>Connect</h3>
-          <p>Link your children's school platforms &mdash; PowerSchool, Canvas, Google Classroom. Credentials are encrypted on your device before they ever leave your phone.</p>
+          <p>Link your children's school platforms &mdash; PowerSchool, Google Classroom, Canvas, Toddle. Credentials are encrypted on your device before they ever leave your phone.</p>
         </div>
         <div class="step">
           <div class="step-number">02</div>
@@ -496,11 +500,15 @@
           <p>Assignments, quizzes, grades, course announcements</p>
         </div>
         <div class="platform-card">
+          <h4>Toddle</h4>
+          <p>Learning journeys, observations, student portfolios</p>
+        </div>
+        <div class="platform-card">
           <h4>WhatsApp</h4>
           <p>Parent group messages about events, trips, notices</p>
         </div>
       </div>
-      <p class="platforms-note"><span>Coming soon:</span> ClassDojo, Remind, Canvas, Schoology</p>
+      <p class="platforms-note"><span>Coming soon:</span> ClassDojo, Remind, SeeSaw, Schoology</p>
     </div>
   </section>
 
