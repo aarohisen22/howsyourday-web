@@ -1,5 +1,1 @@
-{
-  "buildCommand": "",
-  "outputDirectory": ".",
-  "cleanUrls": true
-}
+{"redirects":[{"source":"/(.*)","destination":"https://www.ituy.ai","permanent":false}]}
